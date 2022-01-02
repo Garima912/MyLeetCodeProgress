@@ -16,14 +16,12 @@ class Solution {
         for(int i = 2; i < nums.length; i++){
             if(i/2 != 0 && i > 2){  //even number of houses
                 memo[i] = Math.max(memo[i-2] +nums[i], memo[i-3] + nums[i]);
-            }else{   //odd number of houses
+            }
+            else{   //odd number of houses
                memo[i] = memo[i-2] + nums[i]; 
             }
             
         }
-        // for(int i: memo){
-        //     System.out.println(i+" ");
-        // }
         return Math.max(memo[nums.length -1], memo[nums.length-2]);
         
     }
