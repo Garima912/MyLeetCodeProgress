@@ -21,9 +21,9 @@ class Solution {
             }
             
         }
-        for(int i: memo){
-            System.out.println(i+" ");
-        }
+        // for(int i: memo){
+        //     System.out.println(i+" ");
+        // }
         return Math.max(memo[nums.length -1], memo[nums.length-2]);
         
     }
