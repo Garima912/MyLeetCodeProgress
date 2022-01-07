@@ -15,7 +15,8 @@
  */
 class Solution {
     
-    public List<Integer> inorder (TreeNode root,  List<Integer> nums ){
+    public List<Integer> inorder (TreeNode root,  List<Integer> nums){
+    
         if(root !=  null){
             inorder(root.left, nums);
             nums.add(root.val);
